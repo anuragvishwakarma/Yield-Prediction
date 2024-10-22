@@ -2,13 +2,13 @@ import pandas as pd
 import streamlit as st
 import pickle
 import numpy as np
-
+import pandas as pd
 
 st.title('🐱‍🚀 Agriculture Yield Predictor')
 
 st.info("This is a Machine Learning App.")
 
-df = pickle.load(open('df.pkl','rb'))
+df = pd.read_csv(r"a.csv")
 model = pickle.load(open('LR.pkl','rb'))
 
 
